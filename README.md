@@ -8,8 +8,8 @@ API REST em **Python (FastAPI + SQLAlchemy)** com banco relacional (**SQLite** p
 python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 python -m app.seed                  # cria departamentos e usuários de demonstração
-uvicorn app.main:app --reload       # docs interativas: http://127.0.0.1:8000/docs
-pytest -v                           # testes dos cenários 01–08 e das regras RN
+python uvicorn app.main:app --reload       # docs interativas: http://127.0.0.1:8000/docs
+python pytest -v                           # testes dos cenários 01–08 e das regras RN
 python -m scripts.gerar_evidencias  # gera docs/EVIDENCIAS.md (requisições/respostas reais)
 ```
 
